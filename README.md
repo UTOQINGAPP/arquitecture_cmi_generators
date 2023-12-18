@@ -25,7 +25,7 @@ Do not install the package in **dependencies**. Please note that it is a develop
 
 ## Usage
 
-## 1 Clean Architecture
+## 1 CMI Architecture
 
 To build the project with the CMI architecture, run the following command:
 
