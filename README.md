@@ -1,6 +1,7 @@
 ## CMI arquitecture Generator
 
 Generate a project with the CMI architecture.
+CMI:v0.0.1
 
 ## Table of Contents
 

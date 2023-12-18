@@ -71,12 +71,14 @@ class CmiArchitectureGen {
     await Directory('$components_delegates').create(recursive: true);
     await Directory('$components_shared').create(recursive: true);
     await generateFile(
-        path: '$screens', fileName: 'ui.dart', fileContent: BarrelFileContent);
+        path: '$screens',
+        fileName: 'screens.dart',
+        fileContent: BarrelFileContent);
     await generateFile(
-        path: '$views', fileName: 'ui.dart', fileContent: BarrelFileContent);
+        path: '$views', fileName: 'views.dart', fileContent: BarrelFileContent);
     await generateFile(
         path: '$components',
-        fileName: 'ui.dart',
+        fileName: 'components.dart',
         fileContent: BarrelFileContent);
 
     //generator results file
