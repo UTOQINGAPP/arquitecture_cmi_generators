@@ -2,6 +2,7 @@
 
 Generate a project with the CMI architecture.
 CMI:v0.0.1
+https://github.com/UTOQINGAPP/Arquitectura-CMI.git
 
 ## Table of Contents
 
