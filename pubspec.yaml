@@ -1,7 +1,7 @@
 name: arquitecture_cmi_generators
-description: "A new Flutter package project."
+description: "Generate a project with the CMI architecture."
 version: 0.0.1
-homepage:
+homepage: https://github.com/UTOQINGAPP/arquitecture_cmi_generators.git
 
 environment:
   sdk: '>=3.2.1 <4.0.0'
