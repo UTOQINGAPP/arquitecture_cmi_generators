@@ -1,7 +1,7 @@
 ## CMI arquitecture Generator
 
 Generate a project with the CMI architecture.
-CMI:v0.1.1
+CMI:v0.1.0
 https://github.com/UTOQINGAPP/Arquitectura-CMI.git
 
 ## Table of Contents
