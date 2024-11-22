@@ -1,3 +1,7 @@
+## 0.1.3
+- fix generators struct
+## 0.1.2
+- fix readme
 ## 0.1.1
 - support cmi v0.1.0
 ## 0.0.3

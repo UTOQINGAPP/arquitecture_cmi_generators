@@ -42,22 +42,24 @@ class App extends StatelessWidget {
 """;
 
     final String lib = 'lib';
+    
     //Layer-Configs
-    final String layerConfigs = '$lib/configs';
+
+    final Directory layerConfigs= await Directory('$lib/configs').create(recursive: true);
     // Generate Configs enruter
     await generateFile(
-        path: '$layerConfigs',
+        path: layerConfigs.path,
         fileName: 'configs.dart',
         fileContent: BarrelFileContent);
     //Configs-modules
-    final Directory configsConstants= await Directory('$layerConfigs/constants').create(recursive: true);
-    final Directory configsTheme= await Directory('$layerConfigs/theme').create(recursive: true);
-    final Directory configsRouter= await Directory('$layerConfigs/router').create(recursive: true);
-    final Directory configsHelpers= await Directory('$layerConfigs/helpers').create(recursive: true);
-    final Directory configsColors= await Directory('$layerConfigs/colors').create(recursive: true);
-    final Directory configsNotifications= await Directory('$layerConfigs/notifications').create(recursive: true);
-    final Directory configsLanguages= await Directory('$layerConfigs/languages').create(recursive: true);
-    final Directory configsTypes= await Directory('$layerConfigs/types').create(recursive: true);
+    final Directory configsConstants= await Directory('${layerConfigs.path}/constants').create(recursive: true);
+    final Directory configsTheme= await Directory('${layerConfigs.path}/theme').create(recursive: true);
+    final Directory configsRouter= await Directory('${layerConfigs.path}/router').create(recursive: true);
+    final Directory configsHelpers= await Directory('${layerConfigs.path}/helpers').create(recursive: true);
+    final Directory configsColors= await Directory('${layerConfigs.path}/colors').create(recursive: true);
+    final Directory configsNotifications= await Directory('${layerConfigs.path}/notifications').create(recursive: true);
+    final Directory configsLanguages= await Directory('${layerConfigs.path}/languages').create(recursive: true);
+    final Directory configsTypes= await Directory('${layerConfigs.path}/types').create(recursive: true);
     //Configs-modules-enruter
     await generateFile(
         path: configsConstants.path,
@@ -94,29 +96,30 @@ class App extends StatelessWidget {
 
 
     //Layer-Core
-    final String core = '$lib/core';
+    final Directory layerCore= await Directory('$lib/core').create(recursive: true);
+
     // Generate Core enruter
     await generateFile(
-        path: core,
+        path: layerCore.path,
         fileName: 'core.dart',
         fileContent: BarrelFileContent);
     //Core-modules
-    final String coreRules = '$core/rules';
-    final String coreUses = '$core/uses';
+    final Directory coreRules= await Directory('${layerCore.path}/rules').create(recursive: true);
+    final Directory coreUses= await Directory('${layerCore.path}/uses').create(recursive: true);
     //Core-modules-enruter
      await generateFile(
-        path: coreRules,
+        path: coreRules.path,
         fileName: 'rules_core.dart',
         fileContent: BarrelFileContent);
     await generateFile(
-        path: coreUses,
+        path: coreUses.path,
         fileName: 'uses_core.dart',
         fileContent: BarrelFileContent);
     //Core-modules-container(s)
     // Core-module-rules-container(s)
-    final Directory coreRulesData= await Directory('$coreRules/data').create(recursive: true);
-    final Directory coreRulesServices= await Directory('$coreRules/services').create(recursive: true);
-    final Directory coreRulesConsumers= await Directory('$coreRules/consumers').create(recursive: true);
+    final Directory coreRulesData= await Directory('${coreRules.path}/data').create(recursive: true);
+    final Directory coreRulesServices= await Directory('${coreRules.path}/services').create(recursive: true);
+    final Directory coreRulesConsumers= await Directory('${coreRules.path}/consumers').create(recursive: true);
     //Core-module-rules-container(s)-enruter
     await generateFile(
         path: coreRulesData.path,
@@ -158,16 +161,16 @@ class App extends StatelessWidget {
 
 
     //Layer-UI
-    final String layerUI = '$lib/ui';
+    final Directory layerUI= await Directory('$lib/ui').create(recursive: true);
     // Generate UI enruter
     await generateFile(
-        path: '$layerUI',
+        path: layerUI.path,
         fileName: 'ui.dart',
         fileContent: BarrelFileContent);
     //UI-modules
-    final Directory uiApp= await Directory('$layerUI/app').create(recursive: true);
-    final Directory uiLayouts= await Directory('$layerUI/pages').create(recursive: true);
-    final Directory uiShared= await Directory('$layerUI/shared').create(recursive: true);
+    final Directory uiApp= await Directory('${layerUI.path}/app').create(recursive: true);
+    final Directory uiLayouts= await Directory('${layerUI.path}/pages').create(recursive: true);
+    final Directory uiShared= await Directory('${layerUI.path}/shared').create(recursive: true);
     //Configs-modules-enruter
     await generateFile(
         path: uiApp.path,
