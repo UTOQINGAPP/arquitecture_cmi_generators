@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:arquitecture_cmi_generators/src/file_gen.dart';
+//generators
 
 class CmiArchitectureGen {
   
