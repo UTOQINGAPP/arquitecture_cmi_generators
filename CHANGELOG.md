@@ -1,3 +1,5 @@
+## 0.1.4
+- fix generators struct 
 ## 0.1.3
 - fix generators struct
 ## 0.1.2
