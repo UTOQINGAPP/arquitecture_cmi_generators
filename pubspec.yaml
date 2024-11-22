@@ -1,6 +1,6 @@
 name: arquitecture_cmi_generators
 description: "Generate a project with the CMI architecture."
-version: 0.1.4
+version: 0.1.5
 homepage: https://github.com/UTOQINGAPP/arquitecture_cmi_generators.git
 
 environment:

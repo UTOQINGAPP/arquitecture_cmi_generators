@@ -1,3 +1,6 @@
+## 0.1.5
+- fix generators main
+- fix add enruters *
 ## 0.1.4
 - fix generators struct 
 ## 0.1.3
