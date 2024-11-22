@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:arquitecture_cmi_generators/src/file_gen.dart';
+import 'package:arquitecture_cmi_generators/src/package_data.dart';
 //generators
 
 class CmiArchitectureGen {
@@ -227,7 +228,7 @@ await generateFile(
         path:lib.path,
         fileName: 'main.dart',
         fileContent: contentMain);
-const String contentTest="""
+final String contentTest="""
 // This is a basic Flutter widget test.
 //
 // To perform an interaction with a widget in your test, use the WidgetTester
@@ -237,7 +238,7 @@ const String contentTest="""
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:wasi_art_design_one/lib.dart';
+import 'package:${getProjectName()??'namePackage'}/lib.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

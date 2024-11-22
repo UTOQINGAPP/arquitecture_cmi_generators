@@ -19,7 +19,7 @@ Do not install the package in **dependencies**. Please note that it is a develop
 
  ```
  dev_dependencies:
-   arquitecture_cmi_generators: 0.1.5
+   arquitecture_cmi_generators: 0.1.6
  ```
 
 2. Run 'dart pub get' to install the package

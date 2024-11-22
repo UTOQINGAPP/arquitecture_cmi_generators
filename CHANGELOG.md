@@ -1,3 +1,5 @@
+## 0.1.6
+- fix generators main v1
 ## 0.1.5
 - fix generators main
 - fix add enruters *
