@@ -1,7 +1,7 @@
 ## CMI arquitecture Generator
 
 Generate a project with the CMI architecture.
-CMI:v0.0.1
+CMI:v0.1.1
 https://github.com/UTOQINGAPP/Arquitectura-CMI.git
 
 ## Table of Contents
@@ -19,7 +19,7 @@ Do not install the package in **dependencies**. Please note that it is a develop
 
  ```
  dev_dependencies:
-   arquitecture_cmi_generators: 0.0.1
+   arquitecture_cmi_generators: 0.1.1
  ```
 
 2. Run 'dart pub get' to install the package
@@ -35,50 +35,6 @@ dart run arquitecture_cmi_generators build
 ```
 
 This command will create a new folder and file structure for the CMI architecture.
-
-## Folder Structure
-
-The generated folder structure is as follows:
-
-```
-lib
-└── config
-    └── colors
-    └── constans
-    └── helpers
-    └── languages
-    └── router
-    └── theme
-    └── types
-    └── config.dart
-
-└── core
-    └── domain
-        └── datasources
-        └── entities
-        └── repositories
-    └── implementation
-        └── adapters
-        └── datasources
-        └── models
-        └── repositories
-    └── core.dart
-        
-└── ui
-    └── screens
-        └── screens.dart
-    └── views
-        └── views.dart
-    └── components
-        └── delegates
-        └── shared
-        └── components.dart
-        
-└── result_arquitecture_cmi_generators.dart
-
-```
-
-
 
 ## License
 
